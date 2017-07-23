@@ -1,0 +1,215 @@
+/*############# Default styles #################*/
+html {
+	font-size: 18px;
+}
+body {
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+}
+/*############ Top header item styles ###################*/
+div.container {
+	background: black;
+	
+}
+div.inner-container {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+}
+div.inner-container h1, img {
+	
+}
+div.inner-container img {
+	padding: 0 1rem 0 0.5rem;
+	height: 1.5rem;
+	margin: auto 0;
+}
+div.inner-container h1 {
+	font-size: 1rem;
+	margin: auto 0;
+	color: white;
+	padding-top: 0.66rem;
+	padding-bottom: 0.66rem;
+}
+/*############# New arrival area ###################*/
+div.container1 {
+	display: flex;
+	height: 25rem;
+	background-image: url(background/moto.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-weight: bold;
+}
+div.inner-container1 {
+	width: 960px;
+	margin: 0 auto
+}
+div.news-container {
+	display: block;
+	width: 22rem;
+	margin: auto 0;
+	background: black;
+	color: white;
+	margin-top: 8.5rem;
+}
+div.news-container h3 {
+	font-size: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 0.25rem;
+	padding-left: 3rem;
+}
+div.news-container h2 {
+	font-size: 2rem;
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+/*############# Nav styles ##################*/
+nav {
+	background: firebrick;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+}
+nav ul li {
+	display: block;
+	color: white;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;	
+}
+.menu-mobile {
+	display: none;
+}
+/*############ Thumbnail styles #######################*/
+.thumbnail-container {
+	display: flex;
+	flex-direction: column;
+	width: 960px;
+	margin: 0 auto;
+}
+div.thumbnail {
+	display: flex;
+	justify-content: space-between;
+}
+div.thumb-item {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border: 4px solid black;
+	box-sizing: border-box;
+	margin-top: 3rem;
+	
+}
+div.thumb-item img {
+	max-height: 9rem;
+	max-width: 8rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin: auto;
+	
+}
+div.thumb-item p {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background: black;
+	color: white;
+	text-align: center;
+	margin-top: auto;
+}
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+}
+.contact-item {
+	width: 35%;
+	margin-top: 3rem;
+}
+.contact-item h3 {
+	background: black;
+	color: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	margin-bottom: 0.2rem;
+}
+/*########### Footer styles ####################*/
+footer {
+	line-height: 7rem;
+	margin-top: 4rem;
+	background: black;
+	color: white;
+}
+footer div {
+	max-width: 960px;
+	margin: 0 auto;	
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-menu a{
+		display: none;
+	}
+	.menu-mobile {
+		display: block; 
+		margin: 0 auto;
+	}
+	.thumb-item.three {
+		display: none;
+	}
+	div.thumb-item {
+		max-width: 47%;
+		flex-grow: 1;
+	}
+	.thumbnail-container {
+		width: 100%;
+	}
+	.contact-item {
+		width: 35%;
+	}
+
+}
+@media screen and (max-width: 470px) {
+	div.container1 {
+		height: 15rem;
+	}
+	div.news-container {
+		width: 100%;
+	}
+	div.news-container h2 {
+		font-size: 1rem;
+		padding-left: 2rem
+	}
+	div.news-container h3 {
+		font-size: 0.77rem;
+		padding-left: 2rem;
+	}
+	div.thumb-item.two {
+		display: none;
+	}
+	div.thumb-item {
+		min-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3rem;
+	}
+	div.contact-container {
+		display: block;
+	}
+	.contact-item {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 0;
+	}
+	.contact-item h3 {
+		
+	}
+	.contact-item p {
+		margin-bottom: 0.5rem;
+	}
+	footer {
+		width: 100%;
+		text-align: center;
+	}
+}
