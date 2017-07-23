@@ -147,6 +147,8 @@ footer div {
 	margin: 0 auto;	
 }
 
+/*############## Tablet styles ############################*/
+
 @media screen and (max-width: 1024px) {
 	.nav-menu a{
 		display: none;
@@ -170,6 +172,9 @@ footer div {
 	}
 
 }
+
+/*############## Mobile styles ############################*/
+
 @media screen and (max-width: 470px) {
 	div.container1 {
 		height: 15rem;
